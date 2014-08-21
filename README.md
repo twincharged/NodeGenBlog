@@ -6,6 +6,6 @@ These generators are an absolute game changer for Node. Beautiful, synchronous-l
 
 The repo was written most in pure JS and some in Coffeescript. Coffeescript was used mainly due to its "class" based metaprogramming abilities (`super`, `extend`, etc). I also used it to generate a couple loops using its `for...in ` syntax and create closures. The part about CS that I liked the most was the destructuring patterns. It generates some pretty ugly (yet concise) JS, but it saved me a lot of code and was freaking fun as hell to use. I wrote all the generators and functions in JS because CoffeeScript does not support the `yield` and `*` from Harmony.
 
-NodeGenBlog uses the awesome Postgres and Redis db's. Relations in Postgres are denormalized by using arrays. This substantially increases read performance, but sacrifices (possibly unneccessary) potential features. Redis acts the same way, storing solely foreign id arrays that it feeds directly into Postgres. When used in this manner, these two databases become extremely powerful and blazingly fast.
+NodeGenBlog uses the awesome Postgres and Redis db's. Relations in Postgres are denormalized by using arrays. This substantially increases read performance, but sacrifices potential features. Redis acts the same way, storing solely foreign id arrays that it feeds directly into Postgres. When used in this manner, these two databases become extremely powerful and blazingly fast.
 
 NodeGenBlog is configured to use `HAProxy` and `Socket.io` because awesome.
